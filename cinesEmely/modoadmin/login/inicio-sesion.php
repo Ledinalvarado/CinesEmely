@@ -13,7 +13,7 @@ require_once "../conexion/conexion.php";
 
 $iniciado = isset($_SESSION['iniciado'])? $_SESSION['iniciado']:false;
 
-if (!$iniciado){
+
 
     if(!empty($_POST)){
         $nombre_usuario = isset($_POST["usuario"])? $_POST["usuario"]: '';
@@ -36,12 +36,6 @@ if (!$iniciado){
 
     }
 
-}else{
-
-    header("Location: ");
-//    exit();
-
-}
 
 ?>
 
