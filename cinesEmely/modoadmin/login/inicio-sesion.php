@@ -13,7 +13,7 @@ require_once "../conexion/conexion.php";
 
 $iniciado = isset($_SESSION['iniciado'])? $_SESSION['iniciado']:false;
 
-
+$errores='';
 
     if(!empty($_POST)){
         $nombre_usuario = isset($_POST["usuario"])? $_POST["usuario"]: '';
@@ -25,7 +25,7 @@ $iniciado = isset($_SESSION['iniciado'])? $_SESSION['iniciado']:false;
         $usuario =$resultado->fetch(PDO::FETCH_ASSOC);
 
         if ($usuario === false){
-            echo 'La combinacion usuario-contraseña no existe';
+            $errores.='La combinacion usuario-contraseña es incorrecta<br/>';
         }else{
             $_SESSION['usuario']=$usuario['nombre_usuario'];
             $_SESSION['iniciado']=true;
@@ -50,18 +50,24 @@ $iniciado = isset($_SESSION['iniciado'])? $_SESSION['iniciado']:false;
 
 <body>
 <div class="wrap">
-<form action="" method="post" class="modform">
+<form action="" method="post">
 
 <!--    <label for="usuario">Nombre Usuario</label>-->
-    <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Nombre Usuario">
+    <input type="text"  name="usuario" id="usuario" placeholder="Nombre Usuario">
     <br>
 
 
 <!--    <label for="contrasena"> Contraseña</label>-->
-    <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña">
+    <input type="password"  name="contrasena" id="contrasena" placeholder="Contraseña">
     <br>
 
-    <input type="submit" value="Iniciar Sesion">
+    <?php if (!empty($errores)): ?>
+        <div class="error">
+        <?php echo $errores;?>
+        </div>
+    <?php endif; ?>
+
+        <input type="submit" value="Iniciar Sesion">
 </form>
 </div>
 </body>

@@ -62,6 +62,15 @@ $consulta = $pdo->query("select franquicias.id_franquicia, ciudad.ciudad, franqu
 <div>
     <?php require '../menus/menu_lado.php';?>
 </div>
+
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/nuevaFranquicia.css">
+</head>
+
+<body>
 <div id="formularios">
     <div class="encabezado">
         <h4>
@@ -72,26 +81,28 @@ $consulta = $pdo->query("select franquicias.id_franquicia, ciudad.ciudad, franqu
         <form class="formulario" action="guardar_franquicia.php" method="post" >
             <div>
                 <label>Nombre de la Ciudad</label>
-                <br>
-                <select name="select_ciudad" id="select_ciudad">
+
+                <select name="select_ciudad" class="select_ciudad">
                 <?php foreach ($ciudades as $row):?>
                 <option value="<?php echo $row['id_ciudad']?>" ><?php echo $row['ciudad']?></option>
                 <?php endforeach;?>
                 </select>
             </div>
             <div>
-                <label >Direccion de la Franquicia</label>
-                <br>
-                <input type="text" required placeholder="Direccion" name="direccion_franquicia">
+<!--                <label >Direccion de la Franquicia</label>-->
+<br>
+                <input type="text" required placeholder="Direccion de la Franquicia" name="direccion_franquicia">
             </div>
+            <br>
             <div class="botones">
+
                 <button type="submit" class="btn btn-success" name="boton_guardar_ciuedad">Agregar Franquicia</button>
             </div>
         </form>
     </div>
 </div>
         <div>
-            <table id="tablas" border="1">
+            <table class="tablas" >
                 <thead>
                     <tr>
                         <th>Ciudad</th>
@@ -117,6 +128,20 @@ $consulta = $pdo->query("select franquicias.id_franquicia, ciudad.ciudad, franqu
 
             </table>
         </div>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
 
 <!--<div id="openModalUpdateFranquicia" class="modalDialog">-->
 <!--    <div>-->

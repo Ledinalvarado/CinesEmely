@@ -12,17 +12,25 @@ clasificados.nombre_clasificado, pelicula.descripcion, pelicula.fecha_de_registr
 
 ?>
 </div>
+
+<html>
+<head>
+    <link rel="stylesheet" href="cssMovie/prin_peliculas.css">
+
+</head>
+
+<body>
 <div>
-    <table id="tablas" border="1">
+    <table id="tablas"  >
         <thead>
         <tr>
-            <th>Nombre de la Pelicula</th>
-            <th>Genero de la Pelicula</th>
-            <th>Audio de la Pelicula</th>
-            <th>Clasificados de la Pelicula</th>
-            <th>Descripcion Breve </th>
-            <th>Fecha de Registro</th>
-            <th>Cartel</th>
+            <th >Nombre de la Pelicula</th>
+            <th >Genero de la Pelicula</th>
+            <th >Audio de la Pelicula</th>
+            <th >Clasificados de la Pelicula</th>
+            <th >Descripcion Breve </th>
+            <th >Fecha de Registro</th>
+            <th >Cartel</th>
         </tr>
         </thead>
         <tbody>
@@ -34,9 +42,12 @@ clasificados.nombre_clasificado, pelicula.descripcion, pelicula.fecha_de_registr
                 <td><?php echo $row['nombre_clasificado']?></td>
                 <td><?php echo $row['descripcion']?></td>
                 <td><?php echo $row['fecha_de_registro']?></td>
-                <td><img src="<?php echo $row['ruta_img']?>" width="200px" height="300px" alt=""></td>
+                <td><img src="<?php echo $row['ruta_img']?>" width="200px" height="250px" alt=""></td>
             </tr>
+
         <?php endforeach;?>
         </tbody>
     </table>
 </div>
+</body>
+</html>

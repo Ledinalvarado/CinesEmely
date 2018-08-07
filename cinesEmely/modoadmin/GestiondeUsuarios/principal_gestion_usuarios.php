@@ -8,8 +8,16 @@ franquicias.localidad from franquicias".
 <div>
     <?php require '../menus/menu_lado.php'; ?>
 </div>
+<html>
+<head>
+    <link rel="stylesheet" href="cssUsers/userPrin.css">
+</head>
+
+<body>
+
+
 <div>
-    <table id="tablas" border="1">
+    <table id="tablas" >
         <thead>
         <tr>
             <th>Nombre de Usuario</th>
@@ -18,7 +26,7 @@ franquicias.localidad from franquicias".
             <th>Ciudad</th>
             <th>Localidad</th>
             <th>Modificar</th>
-            <th>eliminar</th>
+            <th>Eliminar</th>
         </tr>
         </thead>
         <tbody>
@@ -38,3 +46,5 @@ franquicias.localidad from franquicias".
         </tbody>
     </table>
 </div>
+</body>
+</html>

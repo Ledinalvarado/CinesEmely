@@ -73,12 +73,16 @@
             display: none;
             overflow: hidden;
 
+
+
+
         }
     </style>
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
+<div  class="sidenav">
+
     <button class="accordion">*Franquicias</button>
     <div class="panel">
         <a href="../GestiondeFranquicias/principal_gestion_franquicias.php">Franquicias</a>
@@ -127,6 +131,7 @@
         });
     }
 </script>
+
 
 </body>
 </html>

@@ -15,34 +15,47 @@ $resultado = $pdo->query("Select ciudad from ciudad")
      require '../principal/principaladmin.php';
      ?>
  </div>
-<div id="formularios">
-    <div class="encabezado">
+
+ <html>
+ <head>
+     <title>Nueva Ciudad</title>
+     <link rel="stylesheet" href="CSS/nuevaCiudad.css">
+ </head>
+
+ <body>
+ <div id="formularios">
         <h4>
             Registro de una Nueva Pelicula
         </h4>
-    </div>
+
     <div class="cuerpo">
         <form class="formulario" action="" method="post" >
-            <div>
-                <label>Nombre de la Ciudad</label>
-                <br>
+            <div class="msj">
+<!--                <label>Nombre de la Ciudad</label>-->
+<!--                <br>-->
                 <input type="text" required placeholder="Nombre de la Ciudad" name="nombre_ciudad">
             </div>
             <div class="botones">
-                <button type="submit" class="btn btn-success" name="boton_guardar_ciuedad">Agregar Ciudad</button>
+                <button type="submit" class="btn btn-success" name="boton_guardar_ciuedad" > Agregar Ciudad</button>
+
+
                 <?php
                 if (!empty($mensaje)):
                     echo '<ul>';
                     foreach ($mensaje as $mensajes){
-                        echo "<li>{$mensajes}</li>";
+
+                        echo $mensajes;
+
                     }
                     echo '</ul>';
                 endif;
                 ?>
+
+
             </div>
         </form>
         <div>
-        <table id="tablas" border="1">
+        <table class="tablas" >
             <thead>
             <tr>
                 <th>Ciudades</th>
@@ -59,3 +72,5 @@ $resultado = $pdo->query("Select ciudad from ciudad")
         </div>
     </div>
 </div>
+ </body>
+ </html>

@@ -63,25 +63,20 @@ form textarea{
 
 /*}*/
 
-/*.alert{*/
-    /*padding: 1em;*/
-    /*color:#fff;*/
-    /*border-radius: 2px;*/
-    /*margin-bottom: 20px;*/
-    /*font-size: 12px;*/
-/*}*/
+form div{
+    padding: 1em;
+    color:#fff;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
 
-/*.alert.error{*/
-    /*background: #f2dede;*/
-    /*border: 1px solid #a94442;*/
-    /*color: #a94442;*/
-/*}*/
+form div{
 
-/*.alert.success{*/
-    /*background: #4caf50;*/
-    /*border: 1px solid #4c994d;*/
-/*}*/
-
+    background: #f2dede;
+    border: 1px solid #a94442;
+    color: #a94442;
+}
 
 
 .btn-primary,
@@ -96,6 +91,7 @@ form input[type="submit"]{
     float: right;
     cursor: pointer;
 }
+
 
 form input[type="submit"]:hover{
     background: #00719f;

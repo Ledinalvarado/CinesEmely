@@ -1,0 +1,51 @@
+#formularios{
+    /*width: 25%;*/
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+    /*display: inline-block;*/
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularios h4{
+    text-align: center;
+    width: 24%;
+    background: #004773;
+    color: white;
+   padding: 5px 5px 5px 5px;
+    font-size: 18px;
+}
+
+input[type="text"]{
+    background: #004773;
+}
+
+
+.formulario div input{
+    width: 25%;
+    background: #f3f3f3;
+
+
+}
+.formulario div button{
+    background: #004773;
+    color: white;
+    width: 25%;
+}
+
+.formulario div button:hover{
+    background: #f3f3f3;
+    color: #004773;
+}
+
+.tablas th{
+    font-size: 28px;
+}
+
+.tablas{
+    font-size: 20px;
+    width: 25%;
+    background: #e1e1e1;
+    color: #005a88;
+    text-align: center;
+}

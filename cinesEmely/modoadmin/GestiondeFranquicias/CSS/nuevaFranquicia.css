@@ -1,0 +1,117 @@
+#formularios{
+    padding: 0 5px;
+
+}
+#formularios .encabezado{/*para modificar el h4 */
+    background: #005a88;
+    padding: 5px;
+    width: 110%;
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+    color: white;
+    text-align: center;
+    height: 50px;
+    margin-left: -25px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+.formulario{/*para modificar el formulario*/
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #e1e1e1;
+    margin-top: 20px;
+    margin-left: 450px;
+    width: 215px;
+    height: 135px;
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 1px 1px #616161;
+    border-radius: 3px;
+
+}
+
+
+.formulario input{
+    background: #e1e1e1;
+    width: 200px;
+    color: black;
+    height: 30px;
+
+}
+
+.formulario select{
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 200px;
+    margin-right: 5px;
+
+}
+.formulario select:focus{
+    outline: none;
+}
+
+.formulario button{
+    padding: 3px;
+    background: #005a88;
+    color: #f5f5f5;
+    font-size: 1em;
+    font-family: "Roboto",Arial,sans-serif,Helvetica;
+    border-radius: 2px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    margin-right: 15px;
+
+}
+
+
+.formulario button:hover{
+    background: #004773;
+    color: #e1e1e1;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+
+.tablas{/*  para modificar la tabla en general que muestra las franquicias creadas  */
+    padding: 5px 5px 5px 5px;
+    background: #e1e1e1;
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+    width: 98%;
+    border-radius: 3px;
+
+
+
+}
+
+.tablas thead tr th {/*para modificar los encabezados de la tabla que muestra los resultados de las franquicias creadas*/
+    background: #005a88;
+    color: white;
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+}
+
+.tablas tbody tr td{/*para modificar las celdas de la tabla */
+    background: #e1e1e1;
+    text-align: center
+}
+
+.tablas tbody tr td a {/* para modificar las celdas que permite modicar o eliminar una franquicia*/
+    background: #e1e1e1;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.tablas tbody tr td a:hover{
+    color: white;
+    background: #005a88;
+    cursor: pointer;
+
+}

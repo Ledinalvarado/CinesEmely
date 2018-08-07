@@ -1,0 +1,37 @@
+#tablas{
+    background: #e1e1e1;
+    color: #005a88;
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+    width: 98.3%;
+   margin-right: 15px;
+    margin-top: 7px;
+    border-radius: 3px;
+
+}
+
+#tablas thead tr th{
+    background: #005a88;
+    color: white;
+    text-align: center;
+}
+
+#tablas thead tr th :hover{
+    background: #005a88;
+}
+
+#tablas tbody tr td{
+    text-align: center;
+    color: #005a88;
+}
+
+
+#tablas tbody tr td a{
+    color: #005a88;
+    text-decoration: none;
+}
+
+#tablas tbody tr td a:hover{
+    color: #003a68;
+    cursor: pointer;
+    font-size: 15px;
+}

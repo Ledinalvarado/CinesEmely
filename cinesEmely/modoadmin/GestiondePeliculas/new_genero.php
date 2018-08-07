@@ -5,6 +5,12 @@ $resultado = $pdo->query("Select genero_pelicula from genero_pelicula");
 <div>
     <?php require '../menus/menu_lado.php'; ?>
 </div>
+<html>
+<head>
+    <link rel="stylesheet" href="cssMovie/newGenero.css">
+</head>
+
+<body>
 <div id="formularios">
     <div class="encabezado">
         <h4>
@@ -25,7 +31,7 @@ $resultado = $pdo->query("Select genero_pelicula from genero_pelicula");
     </div>
 </div>
 <div>
-    <table id="tablas" border="1">
+    <table class="tablas" >
         <thead>
         <tr>
             <th>Generos</th>
@@ -40,3 +46,5 @@ $resultado = $pdo->query("Select genero_pelicula from genero_pelicula");
         </tbody>
     </table>
 </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#tablas{
+    background: #e1e1e1;
+    width: 100%;
+    margin: 15px 15px 5px 5px;
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+    border:  1px solid #004773;
+}
+
+#tablas thead tr th{
+    background: #005a88;
+    color: white;
+    font-family: "Roboto", Arial, sans-serif, Helvetica;
+    padding: 3px;
+
+
+}
+
+
+#tablas tbody tr td {
+
+}
